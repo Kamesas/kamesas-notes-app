@@ -7,10 +7,10 @@ class SignedInLinks extends Component {
     return (
       <Fragment>
         <Menu.Item>
-          <NavLink to="/">Signup</NavLink>
+          <NavLink to="/signup">Signup</NavLink>
         </Menu.Item>
         <Menu.Item>
-          <NavLink to="/">Login</NavLink>
+          <NavLink to="/signin">Login</NavLink>
         </Menu.Item>
       </Fragment>
     );
