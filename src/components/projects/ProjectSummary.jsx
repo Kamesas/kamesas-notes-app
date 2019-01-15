@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Card, Image } from "semantic-ui-react";
 
-const ProjectSummary = () => (
+const ProjectSummary = ({ project }) => (
   <Card>
     <Card.Content>
       <Image
@@ -9,11 +9,9 @@ const ProjectSummary = () => (
         size="mini"
         src="https://react.semantic-ui.com/images/avatar/large/molly.png"
       />
-      <Card.Header>Molly Thomas</Card.Header>
+      <Card.Header>{project.title}</Card.Header>
       <Card.Meta>New User</Card.Meta>
-      <Card.Description>
-        Molly wants to add you to the group <strong>musicians</strong>
-      </Card.Description>
+      <Card.Description>{project.content}</Card.Description>
     </Card.Content>
     <Card.Content extra>
       <div className="ui two buttons">
